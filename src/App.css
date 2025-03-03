@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body{
+  direction: rtl;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-color: #06113C;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+main{
+  min-height: 40vh;
+}
+.todo{
+  background-color: #DDD !important;
+  margin-top: 20px;
+}
+.todo:hover{
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.todoBtn{
+  background-color: white !important;
+  transition: all 0.4s ease-out !important;
+}
+.todoBtn:hover{
+  background-color: #ccc !important;
+}
+.todoBtn.check{
+  color: green !important;
+  border: 3px solid green;
+}
+.todoBtn.check.done{
+  color: white !important;
+  background-color: green !important;
+  /* border: 3px solid green; */
+}
+.todoBtn.edit{
+  color: #024CAA !important;
+  border: 3px solid #024CAA;
+}
+.todoBtn.delete{
+  color: #D84040 !important;
+  border: 3px solid #D84040;
+}
+.input{
+  width: 100%;
+  height: 100%;
+}
+.addBtn{
+  width: 100%;
+  height: 100%;
+  font-size: 24px !important;
+  color: white !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* custom-font */
+@font-face {
+  font-family: Alexandria;
+  src: url(../public/fonts/Alexandria-Bold.ttf);
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: Alexandria;
+  src: url(../public/fonts/Alexandria-Light.ttf);
+  font-weight: 100;
 }
+@font-face {
+  font-family: Alexandria;
+  src: url(../public/fonts/Alexandria-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Alexandria;
+  src: url(../public/fonts/Alexandria-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Alexandria;
+  src: url(/public/fonts/Alexandria-SemiBold.ttf);
+  font-weight: 600;
+}
+/* =======custom-font====== */
